@@ -13,7 +13,7 @@ struct TrieNode {
 class Dictionary {
     unique_ptr<TrieNode> root;
 public:
-    Dictionary() : root(make_unique<TrieNode>()) {}
+    Dictionary() : root(nullptr) {}
 
     unique_ptr<TrieNode> getnode();
 
