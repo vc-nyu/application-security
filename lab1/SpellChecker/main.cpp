@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
     else {
         out << "Spelling mistakes found:" << endl;
         cout << "Spelling mistakes found:" << endl;
-        for (string error : errors) {
+        for (const string &error : errors) {
             out << error << endl;
             cout << error << endl;
         }

@@ -17,9 +17,9 @@ public:
 
     unique_ptr<TrieNode> getnode();
 
-    bool search_word(string word);
+    bool search_word(const string &word) const;
 
-    void add_word(string word);
+    void add_word(const string &word);
 };
 
 #endif //SPELLCHECKER_DICTIONARY_H

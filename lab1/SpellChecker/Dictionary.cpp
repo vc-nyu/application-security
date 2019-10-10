@@ -6,7 +6,7 @@ unique_ptr<TrieNode> Dictionary::getnode() {
     return node;
 }
 
-void Dictionary::add_word(string word) {
+void Dictionary::add_word(const string &word) {
     if (root == nullptr) {
         root = getnode();
     }
@@ -21,7 +21,7 @@ void Dictionary::add_word(string word) {
     ptr->is_end = true;
 }
 
-bool Dictionary::search_word(string word) {
+bool Dictionary::search_word(const string &word) const {
     if (root == nullptr) {
         return false;
     }
